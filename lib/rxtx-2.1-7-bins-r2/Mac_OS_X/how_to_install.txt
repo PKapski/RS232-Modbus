@@ -1,0 +1,53 @@
+Installation on MacOS X
+From Rxtx
+Jump to: navigation, search
+Installing From Source
+
+Before you start installing RXTX you will need to make sure that XCode, Apple's development environment is installed. It should be on one of the system installation disks, or the more recent version is available from Apple's developer web site. As for Java, MacOS X already comes with Java installed so no need to install it again.
+
+Once you have XCode installed download RXTX. See the download page on how to get the latest version.
+
+Once you have downloaded the source extract it, in a terminal window navigate to the extracted directory and enter the command:
+
+sh ./configure
+
+This will configure the build and generate the necessary make files.
+
+Note, that there may be supplementary options you may want to configure, though the standard options should suffice. To see what they are:
+
+sh ./configure --help
+
+Once confiugre has finished running start the make process:
+
+make
+
+If everything has gone to plan you should have a directory corresponding to the system's unix name, for example "powerpc-apple-darwin8.11.0", with the native library 'librxtxSerial.jnilib' and in the current directory there should be the java librar 'RXTXcomm.jar'. See the section on "installing binaries" below, on where to put things.
+Installing Binaries
+
+Whether you compiled from source, or got a binary distribution you should have two files: RXTXcomm.jar and librxtxSerial.jnilib. You will need to copy them to an appropriate location. If you want them to be available to all programs, then the standard locations are:
+
+    * /Library/Java/Extensions - to make available to all users
+    * ~/Library/Java/Extensions - to make available to only your user 
+
+Also, if you are using an IDE such as Eclipse, you can opt to include them in your project instead. If your project is MyHelloWorld then locations would be:
+
+    * MyHelloWorld/lib/RXTXcomm.jar
+    * MyHelloWorld/librxtxSerial.jnilib 
+
+Don't forget to include them in your build path.
+Environment Variables
+
+It should be noted that if you have issues configuring or building RXTX, then the first thing to check out are any environment variable that could be causing problems. For example:
+
+    * PATH - ensure that /usr/bin & /bin are first, since it has been know for other libraries to conflict, such as those installed with Fink or MacPorts
+    * CFLAGS - here it has been know the '-ansi' flags to cause issues with the RXTX source and gcc. 
+
+Also, if you run configure again, after changing environment variables, removing the config.status file would be handy, since that acts a cache for the values taken from the first run.
+
+Additionally, if you wish to add support for 64-bit architectures, then you can add the following to your CFLAGS and LDFLAGS environment variables before you run configure:
+
+-arch x86_64 -arch ppc64
+
+It should be noted that you will need MacOS X 10.5 for 64-bit support on Intel machines and at least 10.4 for 64-bit support for PowerPC machines.
+
+For 64-bit Java 6 you will also need to patch SerialImpl.c and SerialImpl.h according to the note on the forum here: [[1]]. A user has provided a binary download of librxtxSerial.jnilib here: [[2] http://iharder.sourceforge.net/current/java/] 

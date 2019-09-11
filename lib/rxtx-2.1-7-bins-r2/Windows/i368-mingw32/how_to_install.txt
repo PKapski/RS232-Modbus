@@ -1,0 +1,31 @@
+Installation for Windows
+From Rxtx
+Jump to: navigation, search
+
+RXTX installation procedure if you want to run RXTX enabled programs ==
+
+If you just want to run RXTX enabled programs, follow this procedure.
+
+Identify your Java Runtime Environment's folder. For version 1.6.0, this usually is
+
+    c:\Program Files\Java\jre1.6.0_01\ 
+
+    * Copy rxtxParallel.dll to c:\Program Files\Java\jre1.6.0_01\bin\
+    * Copy rxtxSerial.dll to c:\Program Files\Java\jre1.6.0_01\bin\
+    * Copy RXTXcomm.jar to c:\Program Files\Java\jre1.6.0_01\lib\ext\ 
+
+
+NOTE: When installing on Windows XP Embedded, make sure you include crtdll.dll (in the C Runtime Component) as it is required by rxtxSerial.dll
+RXTX installation procedure if you want to develop or compile RXTX enabled programs
+
+If you want to develop and compile RXTX enabled programs, for example with the NetBeans IDE, follow this procedure.
+
+Identify your Java Development Kit's folder. For version 1.6.0, this usually is
+
+    c:\Program Files\Java\jdk1.6.0_01\ 
+
+    * Copy rxtxParallel.dll to c:\Program Files\Java\jdk1.6.0_01\jre\bin\
+    * Copy rxtxSerial.dll to c:\Program Files\Java\jdk1.6.0_01\jre\bin\
+    * Copy RXTXcomm.jar to c:\Program Files\Java\jdk1.6.0_01\jre\lib\ext\ 
+
+Note that there is an additional \jre\ subfolder in this path! 

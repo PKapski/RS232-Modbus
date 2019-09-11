@@ -1,0 +1,104 @@
+Installation on Linux
+From Rxtx
+Jump to: navigation, search
+
+The documentation below is a little dated and could do with some updating. Please could someone reformat and ensure their correctness:
+Contents
+[hide]
+
+    * 1 Requirements
+    * 2 Installing from Source
+          o 2.1 Installing Java
+          o 2.2 Installing RXTX
+                + 2.2.1 General Steps
+                + 2.2.2 Method 1: Make Install
+                + 2.2.3 Method 2: Adding to your path
+                + 2.2.4 Method 3: With an IDE
+    * 3 Installing Binaries
+
+Requirements
+
+You will need JDK 1.4+ (JDK 1.3 might work), autoconf, automake, libtool, gnu make and gcc.
+
+Note that you are recommended to use the JDK, as opposed to the gcc flavour, since the latter will most probably cause you issues. If your OS does not provide a proper version, or a package manager that will get it for you, then you can download the JDK from the Java SE Downloads page.
+Installing from Source
+Installing Java
+
+If you don't already have Java installed on your system, you will need to install it. The best way, if possible, is to use the package manager for your distribution to install it. Failing that you can get a JDK (Java Developer Kit) installer from Sun's Java Developer web site. People who just want to run their Java applications can get the JRE installation, though note that you will not be able to develop or compile with the JRE. Since the general instructions are oriented towards developers, we recommend having the JDK installed.
+
+If the environment variable JAVA_HOME is not defined, then it is recommend that you define it in your login script. For example if your Java installation is located at /usr/java/jdk6_03, then in a csh style shell run:
+
+setenv JAVA_HOME /usr/java/jdk6_03
+
+or an sh style shell run:
+
+JAVA_HOME=/usr/java/jdk6_03
+export JAVA_HOME
+
+Installing RXTX
+General Steps
+
+Once you have downloaded the source, extract it (alternatively: get it from CVS), and then in a terminal window navigate to the extracted directory and type the command:
+
+sh ./configure
+
+This will configure the build and generate the necessary make files. configure will pick up the location of the Java installation from JAVA_HOME, look for the line that says something like:
+
+/usr/local/java/jdk
+configure: WARNING: using JAVA_HOME environmental variable
+
+Note, that there may be supplementary options you may want to configure, though the standard options should suffice. To see what they are:
+
+sh ./configure --help
+
+Once configure has finished running, start the make process:
+
+make
+
+Note: Spaces in the path may cause the build to fail. If it does ensure the path does not have any spaces.
+
+At this point there are several ways of 'installing' rxtx: using "make install", adding the libraries to your path, or using it with your IDE. These are explained in the following subsections.
+
+Once you have completed the steps, RXTX should now be installed. See the development section for some example code to get you running.
+Method 1: Make Install
+
+You either do this as root user, or by using sudo:
+
+sudo make install
+
+The RXTX jar file and binary libraries will be put into the JDK's or JRE's lib/ext subdirectory.
+Method 2: Adding to your path
+
+    * Copy RXTXcomm.jar and librxtxSerial.so to a location of your choice.
+    * Add the jar to your CLASSPATH, specifying the absolute path to the JAR, for example if it is in /home/myuser/javalibs, csh syntax and sh syntax: 
+
+ setenv CLASSPATH ${CLASSPATH}:/home/myuser/javalibs/RXTXcomm.jar
+
+ export  CLASSPATH=$CLASSPATH:/home/myuser/javalibs/RXTXcomm.jar
+
+    * Add the folder containing the native library to the LD_LIBRARY_PATH, for example if it is in /home/myuser/lib 
+
+ setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/home/myuser/lib/
+
+ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/myuser/lib/
+
+Note, that since the atcual library has a version in its name, you should ensure that a symbolic link is made to the library using an unversioned name, in the same folder. For example:
+
+ ln -s librxtxSerial-2.1-7.so librxtxSerial.so
+
+Method 3: With an IDE
+
+Also, if you are using an IDE such as Eclipse, you can opt to include them in your project instead. If your project is MyHelloWorld then locations would be:
+
+    * MyHelloWorld/lib/RXTXcomm.jar
+    * MyHelloWorld/librxtxSerial.so 
+
+Don't forget to include them in your build path.
+
+Note, that since the atcual library has a version in its name, you should ensure that a symbolic link is made to the library using an unversioned name, in the same folder. For example:
+
+ ln -s librxtxSerial-2.1-7.so librxtxSerial.so
+
+Installing Binaries
+
+To do... 

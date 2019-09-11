@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="mainPanel" noResource="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[600, 280]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="pConfiguration" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jPanel1" min="-2" max="-2" attributes="1"/>
+                  <EmptySpace min="-2" pref="1055" max="-2" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="pConfiguration" alignment="0" max="32767" attributes="1"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Component id="jPanel1" alignment="0" min="0" max="32767" attributes="1"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="pConfiguration">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="pConfiguration" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbTransmission" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbSpeed" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cbTransmission" alignment="0" pref="75" max="32767" attributes="1"/>
+                                  <Component id="cbSpeed" alignment="0" pref="75" max="32767" attributes="1"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbTimeout2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbTimeout3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cbTimeout3" alignment="0" pref="75" max="32767" attributes="0"/>
+                                  <Component id="cbTimeout2" alignment="0" pref="75" max="32767" attributes="1"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lbPortNumber" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="cbPortNumber" pref="75" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbStation" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbAddress" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cbAddress" alignment="1" pref="75" max="32767" attributes="1"/>
+                                  <Component id="cbStation" alignment="1" pref="75" max="32767" attributes="1"/>
+                                  <Component id="cbRetransmission" alignment="0" pref="75" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="btnSave" min="-2" pref="69" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnChange" pref="70" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbSpeed" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbSpeed" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbTransmission" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbTransmission" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbTimeout2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbTimeout2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbTimeout3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbTimeout3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbPortNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbPortNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbStation" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbStation" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbRetransmission" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnSave" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnChange" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="13" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lbSpeed">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="lbSpeed.text"/>
+                <Property name="name" type="java.lang.String" value="lbSpeed" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbTimeout2">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="lbTimeout2.text"/>
+                <Property name="name" type="java.lang.String" value="lbTimeout2" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbTransmission">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="lbTransmission.text"/>
+                <Property name="name" type="java.lang.String" value="lbTransmission" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbSpeed">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="7">
+                    <StringItem index="0" value="9600"/>
+                    <StringItem index="1" value="4800"/>
+                    <StringItem index="2" value="2400"/>
+                    <StringItem index="3" value="1200"/>
+                    <StringItem index="4" value="600"/>
+                    <StringItem index="5" value="300"/>
+                    <StringItem index="6" value="150"/>
+                  </StringArray>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cbSpeed" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbTransmission">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="7E1"/>
+                    <StringItem index="1" value="7O1"/>
+                    <StringItem index="2" value="7N2"/>
+                  </StringArray>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cbTransmission" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbTimeout2">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="100">
+                    <StringItem index="0" value="0.01"/>
+                    <StringItem index="1" value="0.02"/>
+                    <StringItem index="2" value="0.03"/>
+                    <StringItem index="3" value="0.04"/>
+                    <StringItem index="4" value="0.05"/>
+                    <StringItem index="5" value="0.06"/>
+                    <StringItem index="6" value="0.07"/>
+                    <StringItem index="7" value="0.08"/>
+                    <StringItem index="8" value="0.09"/>
+                    <StringItem index="9" value="0.10"/>
+                    <StringItem index="10" value="0.11"/>
+                    <StringItem index="11" value="0.12"/>
+                    <StringItem index="12" value="0.13"/>
+                    <StringItem index="13" value="0.14"/>
+                    <StringItem index="14" value="0.15"/>
+                    <StringItem index="15" value="0.16"/>
+                    <StringItem index="16" value="0.17"/>
+                    <StringItem index="17" value="0.18"/>
+                    <StringItem index="18" value="0.19"/>
+                    <StringItem index="19" value="0.20"/>
+                    <StringItem index="20" value="0.21"/>
+                    <StringItem index="21" value="0.22"/>
+                    <StringItem index="22" value="0.23"/>
+                    <StringItem index="23" value="0.24"/>
+                    <StringItem index="24" value="0.25"/>
+                    <StringItem index="25" value="0.26"/>
+                    <StringItem index="26" value="0.27"/>
+                    <StringItem index="27" value="0.28"/>
+                    <StringItem index="28" value="0.29"/>
+                    <StringItem index="29" value="0.30"/>
+                    <StringItem index="30" value="0.31"/>
+                    <StringItem index="31" value="0.32"/>
+                    <StringItem index="32" value="0.33"/>
+                    <StringItem index="33" value="0.34"/>
+                    <StringItem index="34" value="0.35"/>
+                    <StringItem index="35" value="0.36"/>
+                    <StringItem index="36" value="0.37"/>
+                    <StringItem index="37" value="0.38"/>
+                    <StringItem index="38" value="0.39"/>
+                    <StringItem index="39" value="0.40"/>
+                    <StringItem index="40" value="0.41"/>
+                    <StringItem index="41" value="0.42"/>
+                    <StringItem index="42" value="0.43"/>
+                    <StringItem index="43" value="0.44"/>
+                    <StringItem index="44" value="0.45"/>
+                    <StringItem index="45" value="0.46"/>
+                    <StringItem index="46" value="0.47"/>
+                    <StringItem index="47" value="0.48"/>
+                    <StringItem index="48" value="0.49"/>
+                    <StringItem index="49" value="0.50"/>
+                    <StringItem index="50" value="0.51"/>
+                    <StringItem index="51" value="0.52"/>
+                    <StringItem index="52" value="0.53"/>
+                    <StringItem index="53" value="0.54"/>
+                    <StringItem index="54" value="0.55"/>
+                    <StringItem index="55" value="0.56"/>
+                    <StringItem index="56" value="0.57"/>
+                    <StringItem index="57" value="0.58"/>
+                    <StringItem index="58" value="0.59"/>
+                    <StringItem index="59" value="0.60"/>
+                    <StringItem index="60" value="0.61"/>
+                    <StringItem index="61" value="0.62"/>
+                    <StringItem index="62" value="0.63"/>
+                    <StringItem index="63" value="0.64"/>
+                    <StringItem index="64" value="0.65"/>
+                    <StringItem index="65" value="0.66"/>
+                    <StringItem index="66" value="0.67"/>
+                    <StringItem index="67" value="0.68"/>
+                    <StringItem index="68" value="0.69"/>
+                    <StringItem index="69" value="0.70"/>
+                    <StringItem index="70" value="0.71"/>
+                    <StringItem index="71" value="0.72"/>
+                    <StringItem index="72" value="0.73"/>
+                    <StringItem index="73" value="0.74"/>
+                    <StringItem index="74" value="0.75"/>
+                    <StringItem index="75" value="0.76"/>
+                    <StringItem index="76" value="0.77"/>
+                    <StringItem index="77" value="0.78"/>
+                    <StringItem index="78" value="0.79"/>
+                    <StringItem index="79" value="0.80"/>
+                    <StringItem index="80" value="0.81"/>
+                    <StringItem index="81" value="0.82"/>
+                    <StringItem index="82" value="0.83"/>
+                    <StringItem index="83" value="0.84"/>
+                    <StringItem index="84" value="0.85"/>
+                    <StringItem index="85" value="0.86"/>
+                    <StringItem index="86" value="0.87"/>
+                    <StringItem index="87" value="0.88"/>
+                    <StringItem index="88" value="0.89"/>
+                    <StringItem index="89" value="0.90"/>
+                    <StringItem index="90" value="0.91"/>
+                    <StringItem index="91" value="0.92"/>
+                    <StringItem index="92" value="0.93"/>
+                    <StringItem index="93" value="0.94"/>
+                    <StringItem index="94" value="0.95"/>
+                    <StringItem index="95" value="0.96"/>
+                    <StringItem index="96" value="0.97"/>
+                    <StringItem index="97" value="0.98"/>
+                    <StringItem index="98" value="0.99"/>
+                    <StringItem index="99" value="1.00"/>
+                  </StringArray>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cbTimeout2" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbAddress">
+              <Properties>
+                <Property name="model" postCode="cbAddress.setModel(new javax.swing.DefaultComboBoxModel(new String[] {&quot;0&quot;}));"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="cbAddress" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbAddress">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="lbAddress.text"/>
+                <Property name="name" type="java.lang.String" value="lbAddress" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbStation">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="2">
+                    <StringItem index="0" value="Master"/>
+                    <StringItem index="1" value="Slave"/>
+                  </StringArray>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cbStation" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbStationItemStateChanged"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbStation">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="lbStation.text"/>
+                <Property name="name" type="java.lang.String" value="lbStation" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbPortNumber">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cbPortNumber" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbPortNumber">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="lbPortNumber.text"/>
+                <Property name="name" type="java.lang.String" value="lbPortNumber" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSave">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="btnSave.text"/>
+                <Property name="name" type="java.lang.String" value="btnSave" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnSaveMouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnChange">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="btnChange.text"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="btnChange" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnChangeMouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbTimeout3">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="lbTimeout3.text"/>
+                <Property name="name" type="java.lang.String" value="lbTimeout3" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbTimeout3">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="100">
+                    <StringItem index="0" value="0.1"/>
+                    <StringItem index="1" value="0.2"/>
+                    <StringItem index="2" value="0.3"/>
+                    <StringItem index="3" value="0.4"/>
+                    <StringItem index="4" value="0.5"/>
+                    <StringItem index="5" value="0.6"/>
+                    <StringItem index="6" value="0.7"/>
+                    <StringItem index="7" value="0.8"/>
+                    <StringItem index="8" value="0.9"/>
+                    <StringItem index="9" value="1.0"/>
+                    <StringItem index="10" value="1.1"/>
+                    <StringItem index="11" value="1.2"/>
+                    <StringItem index="12" value="1.3"/>
+                    <StringItem index="13" value="1.4"/>
+                    <StringItem index="14" value="1.5"/>
+                    <StringItem index="15" value="1.6"/>
+                    <StringItem index="16" value="1.7"/>
+                    <StringItem index="17" value="1.8"/>
+                    <StringItem index="18" value="1.9"/>
+                    <StringItem index="19" value="2.0"/>
+                    <StringItem index="20" value="2.1"/>
+                    <StringItem index="21" value="2.2"/>
+                    <StringItem index="22" value="2.3"/>
+                    <StringItem index="23" value="2.4"/>
+                    <StringItem index="24" value="2.5"/>
+                    <StringItem index="25" value="2.6"/>
+                    <StringItem index="26" value="2.7"/>
+                    <StringItem index="27" value="2.8"/>
+                    <StringItem index="28" value="2.9"/>
+                    <StringItem index="29" value="3.0"/>
+                    <StringItem index="30" value="3.1"/>
+                    <StringItem index="31" value="3.2"/>
+                    <StringItem index="32" value="3.3"/>
+                    <StringItem index="33" value="3.4"/>
+                    <StringItem index="34" value="3.5"/>
+                    <StringItem index="35" value="3.6"/>
+                    <StringItem index="36" value="3.7"/>
+                    <StringItem index="37" value="3.8"/>
+                    <StringItem index="38" value="3.9"/>
+                    <StringItem index="39" value="4.0"/>
+                    <StringItem index="40" value="4.1"/>
+                    <StringItem index="41" value="4.2"/>
+                    <StringItem index="42" value="4.3"/>
+                    <StringItem index="43" value="4.4"/>
+                    <StringItem index="44" value="4.5"/>
+                    <StringItem index="45" value="4.6"/>
+                    <StringItem index="46" value="4.7"/>
+                    <StringItem index="47" value="4.8"/>
+                    <StringItem index="48" value="4.9"/>
+                    <StringItem index="49" value="5.0"/>
+                    <StringItem index="50" value="5.1"/>
+                    <StringItem index="51" value="5.2"/>
+                    <StringItem index="52" value="5.3"/>
+                    <StringItem index="53" value="5.4"/>
+                    <StringItem index="54" value="5.5"/>
+                    <StringItem index="55" value="5.6"/>
+                    <StringItem index="56" value="5.7"/>
+                    <StringItem index="57" value="5.8"/>
+                    <StringItem index="58" value="5.9"/>
+                    <StringItem index="59" value="6.0"/>
+                    <StringItem index="60" value="6.1"/>
+                    <StringItem index="61" value="6.2"/>
+                    <StringItem index="62" value="6.3"/>
+                    <StringItem index="63" value="6.4"/>
+                    <StringItem index="64" value="6.5"/>
+                    <StringItem index="65" value="6.6"/>
+                    <StringItem index="66" value="6.7"/>
+                    <StringItem index="67" value="6.8"/>
+                    <StringItem index="68" value="6.9"/>
+                    <StringItem index="69" value="7.0"/>
+                    <StringItem index="70" value="7.1"/>
+                    <StringItem index="71" value="7.2"/>
+                    <StringItem index="72" value="7.3"/>
+                    <StringItem index="73" value="7.4"/>
+                    <StringItem index="74" value="7.5"/>
+                    <StringItem index="75" value="7.6"/>
+                    <StringItem index="76" value="7.7"/>
+                    <StringItem index="77" value="7.8"/>
+                    <StringItem index="78" value="7.9"/>
+                    <StringItem index="79" value="8.0"/>
+                    <StringItem index="80" value="8.1"/>
+                    <StringItem index="81" value="8.2"/>
+                    <StringItem index="82" value="8.3"/>
+                    <StringItem index="83" value="8.4"/>
+                    <StringItem index="84" value="8.5"/>
+                    <StringItem index="85" value="8.6"/>
+                    <StringItem index="86" value="8.7"/>
+                    <StringItem index="87" value="8.8"/>
+                    <StringItem index="88" value="8.9"/>
+                    <StringItem index="89" value="9.0"/>
+                    <StringItem index="90" value="9.1"/>
+                    <StringItem index="91" value="9.2"/>
+                    <StringItem index="92" value="9.3"/>
+                    <StringItem index="93" value="9.4"/>
+                    <StringItem index="94" value="9.5"/>
+                    <StringItem index="95" value="9.6"/>
+                    <StringItem index="96" value="9.7"/>
+                    <StringItem index="97" value="9.8"/>
+                    <StringItem index="98" value="9.9"/>
+                    <StringItem index="99" value="10.0"/>
+                  </StringArray>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cbTimeout3" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbRetransmission">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="6">
+                    <StringItem index="0" value="5"/>
+                    <StringItem index="1" value="4"/>
+                    <StringItem index="2" value="3"/>
+                    <StringItem index="3" value="2"/>
+                    <StringItem index="4" value="1"/>
+                    <StringItem index="5" value="0"/>
+                  </StringArray>
+                </Property>
+                <Property name="name" type="java.lang.String" value="cbRetransmission" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel2.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel2" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="jPanel2" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="jPanel1" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jSeparator3" pref="1" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="tfSendFrame" pref="278" max="32767" attributes="1"/>
+                                  <Component id="tfGetFrame" alignment="0" pref="278" max="32767" attributes="1"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="scrWindowMessage" alignment="0" max="32767" attributes="1"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="tfAddress" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="tfFunction" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="tfMessage" min="-2" pref="216" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btnSend" min="-2" pref="65" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jSeparator3" alignment="0" pref="277" max="32767" attributes="1"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfSendFrame" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tfGetFrame" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="scrWindowMessage" min="-2" pref="176" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="tfMessage" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfFunction" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSend" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnSend">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="btnSend.text"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="focusCycleRoot" type="boolean" value="true"/>
+                <Property name="name" type="java.lang.String" value="btnSend" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnSendMouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="tfFunction">
+              <Properties>
+                <Property name="background" type="java.awt.Color" resourceKey="tfFunction.background"/>
+                <Property name="text" type="java.lang.String" resourceKey="tfFunction.text"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Property name="color" resourceKey="tfFunction.border.lineColor"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="tfFunction" noResource="true"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="scrWindowMessage">
+              <Properties>
+                <Property name="autoscrolls" type="boolean" value="true"/>
+                <Property name="name" type="java.lang.String" value="scrWindowMessage" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="tfMessageWindow">
+                  <Properties>
+                    <Property name="columns" type="int" value="15"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Courier" size="10" style="0"/>
+                    </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="wrapStyleWord" type="boolean" value="true"/>
+                    <Property name="name" type="java.lang.String" value="tfMessageWindow" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="IWSKView_tfMessageWindow"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JTextField" name="tfAddress">
+              <Properties>
+                <Property name="background" type="java.awt.Color" resourceKey="tfAddress.background"/>
+                <Property name="text" type="java.lang.String" resourceKey="tfAddress.text"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Property name="color" resourceKey="tfAddress.border.lineColor"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="tfAddress" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="tfMessage">
+              <Properties>
+                <Property name="background" type="java.awt.Color" resourceKey="tfMessage.background"/>
+                <Property name="text" type="java.lang.String" resourceKey="tfMessage.text"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Property name="color" resourceKey="tfMessage.border.lineColor"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="tfMessage" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator3">
+              <Properties>
+                <Property name="orientation" type="int" value="1"/>
+                <Property name="name" type="java.lang.String" value="jSeparator3" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="tfSendFrame">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="tfSendFrame.text"/>
+                <Property name="name" type="java.lang.String" value="tfSendFrame" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="tfGetFrame">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="tfGetFrame.text"/>
+                <Property name="name" type="java.lang.String" value="tfGetFrame" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel3.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel3" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="menuBar">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="menuBar" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="fileMenu.text"/>
+            <Property name="name" type="java.lang.String" value="fileMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="exitMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.jdesktop.application.Application" id="quit" methodName="quit"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="exitMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="exitMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="helpMenu.text"/>
+            <Property name="name" type="java.lang.String" value="helpMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="iwsk.IWSKView" id="showAboutBox" methodName="showAboutBox"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="aboutMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="mainPanel"/>
+    </Property>
+    <Property name="menuBar" type="javax.swing.JMenuBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="menuBar"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="9"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,39,0,0,6,-26"/>
+  </AuxValues>
+</Form>
