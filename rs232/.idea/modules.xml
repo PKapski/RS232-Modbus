@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/rs232.iml" filepath="$PROJECT_DIR$/.idea/rs232.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rs232.iml" filepath="$PROJECT_DIR$/rs232.iml" />
     </modules>
   </component>
 </project>

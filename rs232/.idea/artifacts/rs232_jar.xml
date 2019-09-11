@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="rs232:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/rs232_jar</output-path>
+    <root id="archive" name="rs232.jar">
+      <element id="module-output" name="rs232" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/appframework-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/RXTXcomm.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/swing-layout-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/swing-worker-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
